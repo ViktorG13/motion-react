@@ -38,6 +38,9 @@ export function Editor() {
         lowlight,
       }),
     ],
+    onUpdate(editor) {
+      console.log(editor.editor.getHTML());
+    },
     content: initialContent,
     editorProps: {
       attributes: {
